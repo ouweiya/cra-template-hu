@@ -1,6 +1,6 @@
 {
   "name": "cra-template-hu",
-  "version": "1.0.2",
+  "version": "1.1.5",
   "keywords": [
     "react",
     "create-react-app",
@@ -23,8 +23,5 @@
   "files": [
     "template",
     "template.json"
-  ],
-  "scripts": {
-    "publish": "yarn publish --patch"
-  }
+  ]
 }
