@@ -1,10 +1,6 @@
-import React from 'react';
+import React, { useEffect, createElement as e } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 
 export default () => {
-  return (
-    <div>
-      <h1>Contact-1</h1>
-    </div>
-  );
+  return e('div', null, e('h1', null, 'Contact-1'));
 };

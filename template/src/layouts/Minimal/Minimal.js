@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, createElement as e } from 'react';
 import { Link, useLocation, Route } from 'react-router-dom';
 
-const Layouts = ({ children }) => {
+const Minimal = ({ children }) => {
   // const { pathname } = useLocation();
 
   useEffect(() => {
     console.log('头部布局-2');
   }, []);
-
-  return <div>{children}</div>;
+  return e('div', null, children);
 };
 
-export default Layouts;
+export default Minimal;

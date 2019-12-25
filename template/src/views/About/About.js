@@ -1,20 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, createElement as e } from 'react';
 import { Link, useLocation, Switch } from 'react-router-dom';
 
-const Two = () => {
-  useEffect(() => {
-    console.log('Two');
-  }, []);
-  return <h1>Two</h1>;
-};
-
 const About = props => {
-  return (
-    <div>
-      <Link to='/'>home</Link> <br />
-      <Link to='/contact/one'>contact</Link>
-      <h1>About</h1>
-    </div>
+  return e(
+    'div',
+    null,
+    e(Link, { to: `/` }, 'home', e('br')),
+    e(Link, { to: `/contact/one` }, 'contact/one'),
+    e('h1', null, 'About')
   );
 };
 

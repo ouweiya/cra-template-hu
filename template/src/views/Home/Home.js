@@ -1,13 +1,8 @@
-import React from 'react';
+import React, { useEffect, createElement as e } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 
 const Home = () => {
-  return (
-    <div>
-      <Link to='/about'>about</Link>
-      <h1>Home</h1>
-    </div>
-  );
+  return e('div', null, e(Link, { to: `/about` }, 'about'), e('h1', null, 'Home'));
 };
 
 export default Home;

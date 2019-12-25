@@ -1,12 +1,9 @@
-import React, { useEffect, createElement as e, Fragment as f } from 'react';
+import React, { useEffect, createElement as e } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 
-const Asy = e('div', null, 'Hello');
-
 const Contact = ({ routes, ...rest }) => {
   const { pathname } = rest.location;
-  console.log('rest.match: ', pathname);
 
   return e(
     'div',

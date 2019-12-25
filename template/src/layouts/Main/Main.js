@@ -1,8 +1,8 @@
-import React, { useEffect, createElement as e, Fragment as f } from 'react';
+import React, { useEffect, createElement as e } from 'react';
 import { Link, useLocation, Route } from 'react-router-dom';
 import Header from 'src/components/Header/Header';
 
-const Layouts = ({ children }) => {
+const Main = ({ children }) => {
   // const { pathname } = useLocation();
 
   useEffect(() => {
@@ -12,4 +12,4 @@ const Layouts = ({ children }) => {
   return e('div', null, e(Header), children);
 };
 
-export default Layouts;
+export default Main;
