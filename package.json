@@ -1,6 +1,6 @@
 {
   "name": "cra-template-hu",
-  "version": "2.0.10",
+  "version": "2.1.1",
   "keywords": [
     "react",
     "create-react-app",
@@ -26,6 +26,6 @@
   ],
   "scripts": {
     "up": "yarn publish --patch",
-    "publish": "git add . && git commit -m '' && git push origin master"
+    "publish2": "git add . && git commit -m ' ' && git push origin master"
   }
 }
