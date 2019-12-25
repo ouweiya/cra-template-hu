@@ -1,0 +1,66 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js publish --patch
+
+PATH: 
+  C:\Users\dell\AppData\Local\Temp\yarn--1577269693068-0.9928690989421629;c:\Users\dell\Desktop\cra-template-hu\node_modules\.bin;C:\Users\dell\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Cmder\vendor\git-for-windows\cmd\;C:\Users\dell\AppData\Local\Module\node_modules\.bin;C:\MinGW\bin;D:\SublimeText3\;C:\Program Files (x86)\Google\Chrome\Application\;C:\Users\dell\AppData\Local\Android\Sdk\platform-tools;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-13.0.1\bin;D:\wx;D:\反向\ngrok;D:\SublimeMerge;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dell\Desktop\icon\nwjs-sdk-v0.39.3-win-x64;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Yarn\bin\;D:\ffmpeg\ffmpeg-20191016-29dac29-win64-static\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\mitmproxy\bin;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code Insiders\bin;;C:\Users\dell\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dell\AppData\Local\Yarn\bin;C:\Users\dell\AppData\Roaming\npm
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  10.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:136824:13)
+      at Interface.emit (events.js:198:13)
+      at Interface._ttyWrite (readline.js:801:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:198:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1073:36)
+      at ReadStream.emit (events.js:198:13)
+      at addChunk (_stream_readable.js:287:12)
+
+npm manifest: 
+  {
+    "name": "cra-template-hu",
+    "version": "2.0.9",
+    "keywords": [
+      "react",
+      "create-react-app",
+      "template"
+    ],
+    "description": "The base template for Create React App.",
+    "main": "template.json",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ouweiya/cra-template-hu.git",
+      "directory": "template"
+    },
+    "license": "MIT",
+    "engines": {
+      "node": ">=8"
+    },
+    "bugs": {
+      "url": "https://github.com/ouweiya/cra-template-hu.git/issues"
+    },
+    "files": [
+      "template",
+      "template.json"
+    ],
+    "scripts": {
+      "up": "yarn publish --patch",
+      "publish": "git add . && git commit -m '' && git push origin master"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
