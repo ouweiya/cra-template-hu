@@ -3,7 +3,15 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/user-event": "^7.1.2",
-    "query-string": "latest"
+    "query-string": "latest",
+    "axios": "latest",
+    "tcomb-validation": "latest",
+    "typeface-roboto": "latest",
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "@reduxjs/toolkit": "latest",
+    "react-redux": "latest",
+    "react-router-dom": "latest"
   },
   "scripts": {
     "serve": "serve -s build",
