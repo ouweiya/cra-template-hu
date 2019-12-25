@@ -11,7 +11,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ouweiya/cra-template-hu.git",
-    "directory": "packages/cra-template"
+    "directory": "template"
   },
   "license": "MIT",
   "engines": {
@@ -23,5 +23,8 @@
   "files": [
     "template",
     "template.json"
-  ]
+  ],
+  "scripts": {
+    "publish": "yarn publish --patch"
+  }
 }
