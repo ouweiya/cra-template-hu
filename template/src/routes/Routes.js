@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createElement as e } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import MainLayout from 'src/layouts/Main/Main';
 import MinimalLayout from 'src/layouts/Minimal/Minimal';
@@ -44,12 +44,6 @@ const RouteWithLayout = config => {
   );
 };
 
-const Routes = () => (
-  <Switch>
-    {routes.map(config => (
-      <RouteWithLayout {...config} />
-    ))}
-  </Switch>
-);
+const Routes = () => e(Switch, null, ...routes.map(config => <RouteWithLayout {...config} />));
 
 export default Routes;

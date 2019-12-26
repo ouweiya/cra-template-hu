@@ -11,7 +11,8 @@
     "@material-ui/icons": "latest",
     "@reduxjs/toolkit": "latest",
     "react-redux": "latest",
-    "react-router-dom": "latest"
+    "react-router-dom": "latest",
+    "react-perfect-scrollbar": "latest"
   },
   "scripts": {
     "serve": "serve -s build",

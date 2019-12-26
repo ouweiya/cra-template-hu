@@ -7,6 +7,7 @@ import { HashRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from 'src/store/store';
 import 'typeface-roboto';
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 const App = () => {
   return (
