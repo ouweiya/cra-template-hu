@@ -1,6 +1,6 @@
 {
   "name": "cra-template-hu",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "keywords": [
     "react",
     "create-react-app",
@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "up": "yarn publish --patch",
-    "postpublish": "node push.js"
+    "prepublish": "node push.js"
   },
   "dependencies": {
     "shelljs": "^0.8.3"
