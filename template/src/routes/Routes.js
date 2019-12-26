@@ -1,13 +1,10 @@
-import React, { createElement as e, Fragment as f } from 'react';
+import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Home from 'src/views/Home/Home';
-import About from 'src/views/About/About';
-import Contact from 'src/views/Contact/Contact';
-import NotFound from 'src/views/404/NotFound';
-import One from 'src/views/One/One';
-import Two from 'src/views/Two/Two';
 import MainLayout from 'src/layouts/Main/Main';
 import MinimalLayout from 'src/layouts/Minimal/Minimal';
+import Home from 'src/views/Home/Home';
+import About from 'src/views/About/About';
+import NotFound from 'src/views/404/NotFound';
 
 const routes = [
   {
@@ -19,21 +16,8 @@ const routes = [
   {
     path: `/about`,
     layout: MainLayout,
-    component: About
-  },
-  {
-    path: `/contact`,
-    layout: MainLayout,
-    component: Contact,
+    component: About,
     routes: [
-      {
-        path: `/contact/one`,
-        component: One
-      },
-      {
-        path: `/contact/two`,
-        component: Two
-      },
       {
         component: NotFound
       }
@@ -46,10 +30,26 @@ const routes = [
 ];
 
 const RouteWithLayout = config => {
-  const { layout: Layout, component: Component, routes, ...rest } = config;
-  return e(Route, { ...rest, render: matchProps => e(Layout, null, e(Component, { ...matchProps, routes })) });
+  const { layout: Layout, component: Component, routes, ...other } = config;
+
+  return (
+    <Route
+      {...other}
+      render={matchProps => (
+        <Layout>
+          <Component {...matchProps} routes={routes} />
+        </Layout>
+      )}
+    />
+  );
 };
 
-const Routes = () => e(Switch, null, ...routes.map(config => e(RouteWithLayout, config)));
+const Routes = () => (
+  <Switch>
+    {routes.map(config => (
+      <RouteWithLayout {...config} />
+    ))}
+  </Switch>
+);
 
 export default Routes;

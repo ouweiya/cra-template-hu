@@ -26,6 +26,6 @@
   ],
   "scripts": {
     "up": "yarn publish --patch",
-    "publish2": "git add . && git commit -m ' ' && git push origin master"
+    "publish2": "git add . && git commit -m '' && git push origin master"
   }
 }

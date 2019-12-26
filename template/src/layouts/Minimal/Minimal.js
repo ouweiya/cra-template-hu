@@ -1,13 +1,11 @@
-import React, { useEffect, createElement as e } from 'react';
+import React, { useEffect, memo } from 'react';
 import { Link, useLocation, Route } from 'react-router-dom';
 
 const Minimal = ({ children }) => {
   // const { pathname } = useLocation();
 
-  useEffect(() => {
-    console.log('头部布局-2');
-  }, []);
-  return e('div', null, children);
+  useEffect(() => {}, []);
+  return <div>{children}</div>;
 };
 
-export default Minimal;
+export default memo(Minimal);

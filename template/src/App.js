@@ -8,7 +8,18 @@ import { Provider } from 'react-redux';
 import store from 'src/store/store';
 import 'typeface-roboto';
 
-const App = e(Provider, { store }, e(ThemeProvider, { theme }, e(CssBaseline, null, e(Router, null, e(Routes)))));
+const App = () => {
+  return (
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline>
+          <Router>
+            <Routes />
+          </Router>
+        </CssBaseline>
+      </ThemeProvider>
+    </Provider>
+  );
+};
 
 export default App;
-
