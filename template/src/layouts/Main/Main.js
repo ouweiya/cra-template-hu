@@ -3,8 +3,6 @@ import { Link, useLocation, Route } from 'react-router-dom';
 import Header from 'src/components/Header/Header';
 
 const Main = ({ children }) => {
-  // const { pathname } = useLocation();
-
   useEffect(() => {}, []);
 
   return (
