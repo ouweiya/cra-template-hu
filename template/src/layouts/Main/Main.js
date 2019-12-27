@@ -10,4 +10,4 @@ const Main = ({ children }) => {
   );
 };
 
-export default Main;
+export default memo(Main);
