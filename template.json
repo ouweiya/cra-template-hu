@@ -9,6 +9,7 @@
     "typeface-roboto": "latest",
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
+    "@material-ui/lab": "latest",
     "@reduxjs/toolkit": "latest",
     "react-redux": "latest",
     "react-router-dom": "latest",
