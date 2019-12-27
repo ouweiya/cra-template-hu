@@ -1,13 +1,10 @@
 import React, { useEffect, memo } from 'react';
-// import { Link, useLocation, Route } from 'react-router-dom';
-import Header from 'src/components/Header/Header';
+import Topbar from './components/Topbar';
 
 const Main = ({ children }) => {
-  useEffect(() => {}, []);
-
   return (
     <div>
-      <Header />
+      <Topbar />
       {children}
     </div>
   );

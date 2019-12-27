@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const { actions, reducer } = createSlice({
-  name: 'one',
+  name: 'template',
   initialState: {
     count: 0
   },

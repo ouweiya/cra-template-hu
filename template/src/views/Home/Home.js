@@ -1,4 +1,4 @@
-import React, { useEffect, createElement as e } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Home = () => {
