@@ -1,4 +1,4 @@
-import React, { createElement as e } from 'react';
+import React from 'react';
 import Routes from './routes/Routes';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/styles';
