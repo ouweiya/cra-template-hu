@@ -17,8 +17,7 @@
     "chartist": "latest",
     "react-chartist": "latest",
     "chart.js": "latest",
-    "react-chartjs-2": "latest",
-    "clsx": "latest"
+    "react-chartjs-2": "latest"
   },
   "scripts": {
     "serve": "serve -s build",
