@@ -17,9 +17,13 @@
     "chartist": "latest",
     "react-chartist": "latest",
     "chart.js": "latest",
-    "react-chartjs-2": "latest"
+    "react-chartjs-2": "latest",
+    "shelljs": "latest",
+    "react-app-polyfill": "latest",
+    "lodash": "latest"
   },
   "scripts": {
+    "github": "node ./push.js",
     "serve": "serve -s build",
     "build-and-serve": "yarn run build && yarn run serve"
   }
